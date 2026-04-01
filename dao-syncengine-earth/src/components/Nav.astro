@@ -1,0 +1,70 @@
+---
+---
+<nav class="site-nav">
+  <a href="https://syncengine.earth" class="back-link">
+    <span class="arrow">←</span>
+    <span class="back-label"> syncengine.earth</span>
+  </a>
+  <span class="site-name">dao.syncengine.earth</span>
+</nav>
+
+<style>
+  .site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    padding: 0 2rem;
+    background-color: #0a0a0f;
+    border-bottom: 1px solid #2a2a35;
+  }
+
+  .back-link {
+    display: flex;
+    align-items: center;
+    color: #887e70;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    transition: color 0.15s ease;
+  }
+
+  .back-link:hover {
+    color: #e8ddd0;
+    text-decoration: none;
+  }
+
+  .arrow {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .site-name {
+    color: #665e52;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+  }
+
+  @media (max-width: 640px) {
+    .site-nav {
+      padding: 0 1.25rem;
+    }
+
+    .back-label {
+      display: none;
+    }
+
+    .back-link {
+      font-size: 1rem;
+    }
+
+    .site-name {
+      display: none;
+    }
+  }
+</style>
