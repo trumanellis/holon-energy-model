@@ -332,10 +332,11 @@ def run_event_scenario(
 
 # ── Scenarios ────────────────────────────────────────────────────────────
 
-# Rock-bottom initial conditions: years of daily porn + frequent ejaculation.
-# Severely depleted reserves, fragmented circuitry, near-zero imagination.
+# Rock-bottom initial conditions: steady state of the addiction baseline
+# (S=2.0, N=0.5, D_jing=0.7, D_qi=0.15) run to convergence (5000 days).
+# Total depletion — the spring barely trickles, infrastructure destroyed.
 def _rock_bottom_ic():
-    return dict(phi_jing_0=1.2, phi_qi_0=0.8, phi_shen_0=0.02, C_0=0.08, I_0=0.06)
+    return dict(phi_jing_0=0.006, phi_qi_0=0.005, phi_shen_0=0.0, C_0=0.0, I_0=0.0)
 
 # The active addiction baseline driving variables
 _ADDICTION_DRIVES = dict(H=0.0, E=0.05, S=2.0, N=0.5, G=0.0, Rc=0.0,
